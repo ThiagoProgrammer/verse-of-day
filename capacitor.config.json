@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "versiculo-do-dia",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

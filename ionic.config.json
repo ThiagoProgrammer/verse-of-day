@@ -1,0 +1,7 @@
+{
+  "name": "versiculo-do-dia",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
