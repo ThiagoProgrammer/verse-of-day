@@ -1,20 +1,19 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
+    <ion-title class="text-center">
+      <i class="fas fa-bible text-white"></i> Versículo do dia
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+<div class="h-100 pt-4 wrapper-div">
+<div *ngIf="verse" class="d-flex align-items-center justify-content-center h-100">
+  <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded col-md-7">
+    <div class="blockquote-custom-icon bg-info shadow-sm"><i class="fa fa-quote-left text-white"></i></div>
+    <p class="mb-0 mt-2 font-italic text-dark">{{verse.text}}</p>
+    <footer class="blockquote-footer pt-4 mt-4 border-top">{{verse.book.name}}
+        <cite>{{verse.chapter}}:{{verse.number}}</cite>
+    </footer>
+</blockquote>
+</div>
+</div>
